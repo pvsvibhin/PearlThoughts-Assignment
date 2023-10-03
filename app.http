@@ -1,0 +1,30 @@
+GET http://localhost:3000/doctors
+###
+
+GET http://localhost:3000/appointments
+###
+
+GET http://localhost:3000/doctors/3
+###
+
+GET http://localhost:3000/appointments/2
+###
+
+
+POST http://localhost:3000/appointments/
+Content-Type: application/json
+
+{
+    "patientName": "PVS Vibhin",
+    "patientAge":23,
+    "datetimeOfAppointment":"2023-10-07 10:45:00",
+    "doctorId":1
+}
+
+###
+
+GET http://localhost:3000/doctors/2/appointments
+###
+
+DELETE http://localhost:3000/appointments/5/
+###
